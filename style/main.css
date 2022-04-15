@@ -1,161 +1,133 @@
 body {
+  padding: 0;
 
-    padding: 0;
+  margin: 0;
 
-    margin: 0;
-
-    background-color: #454d6b;
-
+  background-color: #454d6b;
 }
 
 #login {
+  display: flex;
 
-    display: flex;
+  align-items: center;
 
-    align-items: center;
+  justify-content: center;
 
-    justify-content: center;
+  height: 100vh;
 
-    height: 100vh;
-
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .card {
+  background-color: white;
 
-    background-color: white;
+  padding: 40px;
 
-    padding: 40px;
+  border-radius: 2px;
 
-    border-radius: 2px;
-
-    width: 280px;
-
+  width: 280px;
 }
 
 .card-header {
-    padding-left: 20px;
+  padding-left: 20px;
 
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 
-    opacity: 0.8;
+  opacity: 0.8;
 
-    color: black;
-
+  color: black;
 }
 
 .card-header::after {
-    
-    content: "";
+  content: "";
 
-    width: 70px;
+  width: 70px;
 
-    height: 1px;
+  height: 1px;
 
-    background-color: white;
+  background-color: white;
 
-    display: block;
+  display: block;
 
-    margin-top: -17px;
+  margin-top: -17px;
 
-    margin-left: -5px;
-
+  margin-left: -5px;
 }
 
 /* Conteúdo da caixa */
 
 .card-content label {
+  color: black;
 
-    color: black;
+  font-size: 14px;
 
-    font-size: 14px;
-
-    opacity: 0.8;
-
+  opacity: 0.8;
 }
 
 .card-content-area {
+  display: flex;
 
-    display: flex;
+  flex-direction: column;
 
-    flex-direction: column;
-
-    padding: 10px 0;
-
+  padding: 10px 0;
 }
 
 .card-content-area input {
+  margin-top: 10px;
 
-    margin-top: 10px;
+  padding: 0 5px;
 
-    padding: 0 5px;
+  background-color: transparent;
 
-    background-color: transparent;
+  border: none;
 
-    border: none;
+  border-bottom: 1px solid black;
 
-    border-bottom: 1px solid black;
+  outline: none;
 
-    outline: none;
-
-    color: black;
-
+  color: black;
 }
 
 .card-footer {
+  display: flex;
 
-    display: flex;
-
-    flex-direction: column;
-
+  flex-direction: column;
 }
 
 .card-footer .submit {
+  width: 100%;
 
-    width: 100%;
+  height: 40px;
 
-    height: 40px;
+  background-color: #a13854;
 
-    background-color: #a13854;
+  border: none;
 
-    border: none;
+  color: #e1e1e1;
 
-    color: #e1e1e1;
-
-    margin: 10px 0;
-
+  margin: 10px 0;
 }
 
 .card-footer a {
+  text-align: center;
 
-    text-align: center;
+  font-size: 12px;
 
-    font-size: 12px;
+  opacity: 0.8;
 
-    opacity: 0.8;
+  color: blue;
 
-    color: blue;
-
-    text-decoration: none;
-
+  text-decoration: none;
 }
 
 .botao {
-    text-align: center;
-    padding: 8px 15px;
-    background-color: #a13854;
-    border: none;
-    height: 30px;
-    font-size: 15px;
-    cursor: pointer;
-    transition: .3s ease all;
-    color: #e1e1e1;
+  text-align: center;
+  padding: 8px 15px;
+  background-color: #a13854;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  color: #e1e1e1;
 }
-
-
-    
-    
-    
-
-  

@@ -1,75 +1,59 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main.css" />
 
     <title>Login</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <div id="login">
+      <form class="card">
+        <div class="card-header">
+          <!-- Logo da empresa no topo do cartão -->
+          <h2>
+            <img src="style/img/hinova.png" />
+          </h2>
+        </div>
 
-        <form class="card">
+        <div class="card-content">
+          <!-- Preenchimento do usuário -->
+          <div class="card-content-area">
+            <label for="usuario">Usuário</label>
 
-            <div class="card-header">
-                <!-- Logo da empresa no topo do cartão -->
-                <h2>    
-                    <img src="style/img/hinova.png">
-                </h2>
+            <input type="text" id="usuario" autocomplete="off" />
+          </div>
+          <!-- Preenchimento da senha -->
+          <div class="card-content-area">
+            <label for="password">Senha</label>
 
-            </div>
+            <input type="password" id="password" autocomplete="off" />
+          </div>
+        </div>
+        <br />
+        <!-- Botão para Login -->
 
-            <div class="card-content">
-                <!-- Preenchimento do usuário -->
-                <div class="card-content-area">
+        <div class="botao">
+          <button role="button" class="botao">Login</button>
+        </div>
 
-                    <label for="usuario">Usuário</label>
+        <div class="card-footer">
+          <br />
+          <!-- Rodapé do cartão, "Esqueceu a senha?" e "Cadastro" -->
 
-                    <input type="text" id="usuario" autocomplete="off">
+          <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
 
-                </div>
-                <!-- Preenchimento da senha -->
-                <div class="card-content-area">
-
-                    <label for="password">Senha</label>
-
-                    <input type="password" id="password" autocomplete="off">
-
-                </div>
-
-            </div>
-            <br>
-            <!-- Botão para Login -->
-           
-            <div class="botao">
-                <button role="button" class="botao">Login</button>
-            </div>
-
-            <div class="card-footer"> 
-                <br>
-                <!-- Rodapé do cartão, "Esqueceu a senha?" e "Cadastro" -->
-
-                <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-
-                <!-- Opção que leva até a página de cadastro -->
-                <a href="cadastro.html" class="cadastro">Cadastrar</a> 
-            </div>
-
-        </form>
-
+          <!-- Opção que leva até a página de cadastro -->
+          <a href="cadastro.html" class="cadastro">Cadastrar</a>
+        </div>
+      </form>
     </div>
-
-</body>
-
+  </body>
 </html>
