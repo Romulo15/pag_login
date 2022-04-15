@@ -42,27 +42,26 @@ function isValidDate(bday) {
 }
 
 function getAddress() {
-    var endereco = document.getElementById("cep").value;
-    console.log(endereco.length);
-    if(endereco.length == 8 ){
-        console.log("Deu certo");
+  var endereco = document.getElementById("cep").value;
+  console.log(endereco.length);
+  if (endereco.length == 8) {
+    console.log("Deu certo");
     Promise.resolve(fetchAddress(endereco)).then(
-    function (value) {
-      console.log(value); // "Success"
-      document.getElementById("endereco").value = value;
-    },
-    function (value) {}
-  );
-    }
-
+      function (value) {
+        console.log(value); // "Success"
+        document.getElementById("endereco").value = value;
+      },
+      function (value) {}
+    );
+  }
 }
 
 function fetchAddress(endereco) {
-    var requestOptions = {
+  var requestOptions = {
     method: "GET",
     redirect: "follow",
   };
-  
+
   return fetch(`http://viacep.com.br/ws/${endereco}/json/`, requestOptions)
     .then((response) => {
       return response.json();
@@ -73,4 +72,14 @@ function fetchAddress(endereco) {
       }
     })
     .catch((error) => console.log("error", error));
+}
+
+function validateForm() {
+  let nome = document.forms["myForm"]["nome"].value;
+  let idade = document.forms["myForm"]["bday"].value;
+  let cep = document.forms["myForm"]["cep"].value;
+  if (nome == "" || idade == "" || cep == "") {
+    alert("Existem campos em branco");
+    return false;
+  }
 }

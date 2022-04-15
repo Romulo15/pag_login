@@ -11,30 +11,26 @@
     <link rel="stylesheet" href="style/main.css" />
 
     <script src="js/script.js"></script>
-   
 
-    <title>Login</title>
+    <title>Cadastro</title>
   </head>
 
   <body>
     <div id="login">
-      <form class="card">
+      <form name="myForm" class="card" onsubmit="validateForm()">
         <div class="card-header">
           <h2>
             <img src="style/img/hinova.png" />
           </h2>
         </div>
 
-       
         <div class="card-content">
-          
           <div class="card-content-area">
             <label for="usuario">Nome</label>
 
             <input type="text" id="nome" autocomplete="off" />
           </div>
 
-          
           <div class="card-content-area">
             <label for="date">Data de nascimento</label>
 
@@ -45,14 +41,13 @@
               onchange="getAge()"
             />
           </div>
-          
+
           <div class="card-content-area">
             <label for="idade">idade</label>
 
             <input type="number" id="idade" autocomplete="off" onchange="" />
           </div>
 
-          
           <div class="card-content-area">
             <label for="cep">CEP</label>
 
@@ -64,7 +59,6 @@
             />
           </div>
 
-          
           <div class="card-content-area">
             <label for="text">Logradouro</label>
 
@@ -74,17 +68,16 @@
 
         <br />
 
-        
         <div class="botao">
-          <button role="button" class="botao">Cadastrar</button>
+          <button role="button" class="botao" onclick="validateForm()">
+            Cadastrar
+          </button>
         </div>
 
         <br />
 
-        
         <div class="card-footer">
           <a href="index.html" class="cadastro">Já possuo cadastro</a>
-         
         </div>
       </form>
     </div>
