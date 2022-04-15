@@ -40,3 +40,37 @@ function isValidDate(bday) {
   }
   return true;
 }
+
+function getAddress() {
+    var endereco = document.getElementById("cep").value;
+    console.log(endereco.length);
+    if(endereco.length == 8 ){
+        console.log("Deu certo");
+    Promise.resolve(fetchAddress(endereco)).then(
+    function (value) {
+      console.log(value); // "Success"
+      document.getElementById("endereco").value = value;
+    },
+    function (value) {}
+  );
+    }
+
+}
+
+function fetchAddress(endereco) {
+    var requestOptions = {
+    method: "GET",
+    redirect: "follow",
+  };
+  
+  return fetch(`http://viacep.com.br/ws/${endereco}/json/`, requestOptions)
+    .then((response) => {
+      return response.json();
+    })
+    .then((result) => {
+      if (typeof result === "object") {
+        return result.logradouro;
+      }
+    })
+    .catch((error) => console.log("error", error));
+}

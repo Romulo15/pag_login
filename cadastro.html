@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style/main.css" />
 
     <script src="js/script.js"></script>
-    <!-- Seleciona o .js que servirá de script -->
+   
 
     <title>Login</title>
   </head>
@@ -25,16 +25,16 @@
           </h2>
         </div>
 
-        <!-- Classe para o conteudo do cartão como um todo -->
+       
         <div class="card-content">
-          <!-- Preenchimento de nome -->
+          
           <div class="card-content-area">
             <label for="usuario">Nome</label>
 
             <input type="text" id="nome" autocomplete="off" />
           </div>
 
-          <!-- Preenchimento  da data de nascimento-->
+          
           <div class="card-content-area">
             <label for="date">Data de nascimento</label>
 
@@ -45,14 +45,14 @@
               onchange="getAge()"
             />
           </div>
-          <!-- Preenchimento  de idade-->
+          
           <div class="card-content-area">
             <label for="idade">idade</label>
 
             <input type="number" id="idade" autocomplete="off" onchange="" />
           </div>
 
-          <!-- Preenchimento  do CEP-->
+          
           <div class="card-content-area">
             <label for="cep">CEP</label>
 
@@ -60,11 +60,11 @@
               type="number"
               id="cep"
               autocomplete="off"
-              onkeypress="getAddres()"
+              onchange="getAddress()"
             />
           </div>
 
-          <!-- Preenchimento  do logradouro-->
+          
           <div class="card-content-area">
             <label for="text">Logradouro</label>
 
@@ -74,17 +74,17 @@
 
         <br />
 
-        <!-- Botão para opção de cadastro -->
+        
         <div class="botao">
           <button role="button" class="botao">Cadastrar</button>
         </div>
 
         <br />
 
-        <!-- Rodapé do cartão com a opção "Já possuo cadastro"  -->
+        
         <div class="card-footer">
           <a href="index.html" class="cadastro">Já possuo cadastro</a>
-          <!-- Opção que leva até a página de login -->
+         
         </div>
       </form>
     </div>
