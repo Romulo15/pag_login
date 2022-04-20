@@ -1,9 +1,3 @@
-function Enviar() {
-  var nome = document.getElementById("nome");
-  var idade = document.getElementById("bday");
-  var endereco = document.getElementById("cep");
-}
-
 function getAddres() {}
 
 function getAge() {
@@ -43,12 +37,11 @@ function isValidDate(bday) {
 
 function getAddress() {
   var endereco = document.getElementById("cep").value;
-  console.log(endereco.length);
+
   if (endereco.length == 8) {
     console.log("Deu certo");
     Promise.resolve(fetchAddress(endereco)).then(
       function (value) {
-        console.log(value); // "Success"
         document.getElementById("endereco").value = value;
       },
       function (value) {}
@@ -82,4 +75,9 @@ function validateForm() {
     alert("Existem campos em branco");
     return false;
   }
+}
+
+function showForm() {
+  document.getElementById("nome").style.display = "block";
+  return nome;
 }
